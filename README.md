@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Soul's Keepsake Box is a responsive web application where users can submit, view, edit, and delete messages. Messages are stored locally and persist even after page refresh. The application includes a dark/light mode toggle for user preference.
 
-## Getting Started
+## Features
 
-First, run the development server:
+- **Message Management**
+  - Create new messages
+  - View all submitted messages
+  - Edit existing messages
+  - Delete messages
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **User Experience**
+  - Responsive design for all device sizes
+  - Dark/light mode toggle
+  - Form validation and error handling
+  - Success notifications
+  - Character limit counter
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Data Persistence**
+  - Messages stored in browser's localStorage
+  - Messages persist after page refresh
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Error Handling**
+  - Empty message validation
+  - Character limit validation (500 characters maximum)
+  - Visual feedback for validation errors
+  
+  
+## Visual Feedback
+  - Error messages appear in red below the text area
+  - The character counter changes color when you exceed the limit
+  - Success messages appear when operations complete successfully
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - Language: TypeScript
+  - Framework: Next.js
+  - Style: Tailwind CSS
+  - Icons: Lucide React 
+  - Date Formatting: date-fns
+  - Theme Switching: next-themes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Adding a Message**
+  - Type your message in the text area
+  - Click the "Submit" button
+  - Your message will appear in the list below
+  Noted: The application includes validation:
+    - If you try to submit an empty message, you'll see an error: "Please enter a message
+    - If your message exceeds 500 characters, you'll see an error: "Message is too long (maximum 500 characters)"
+
+- **Editing a Message**
+  - Click the "Edit" button on any message
+  - Modify the text in the form
+  - Click "Update" to save changes
+
+- **Deleting a Message**
+  - Click the "Delete" button on any message
+  - The message will be removed from the list
+
+- **Toggling Dark/Light Mode**
+  - Click the sun/moon icon in the header to switch between dark and light themes.
+
+
+
+
+
+
+
+
+
+
+  
+  
